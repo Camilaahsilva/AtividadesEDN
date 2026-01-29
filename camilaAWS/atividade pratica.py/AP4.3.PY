@@ -1,5 +1,5 @@
 # Atividade Prática 04
-# AP4.3 - Verificador de Senha
+# AP4.3 - Verificador de senha
 
 senha = input("Digite uma senha: ")
 
