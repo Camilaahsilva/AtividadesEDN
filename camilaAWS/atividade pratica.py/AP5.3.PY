@@ -1,16 +1,17 @@
 # Atividade Prática 05
-# AP5.3 - Cálculo de preço com desconto
+# AP5.3 - Cálculo de preço final com desconto percentual
 
-def calcular_preco_final(preco_original, desconto_percentual):
-    desconto = preco_original * (desconto_percentual / 100)
-    preco_final = preco_original - desconto
-    return preco_final
+# Entrada de dados
+preco_original = float(input("Digite o preço original do produto: R$ "))
+desconto_percentual = float(input("Digite o desconto (%): "))
 
+# a - Cálculo do desconto
+valor_desconto = preco_original * (desconto_percentual / 100)
 
-# Programa principal
-preco = float(input("Digite o preço do produto: "))
-desconto = float(input("Digite o desconto (%): "))
+# b - Preço final após o desconto
+preco_final = preco_original - valor_desconto
 
-valor_final = calcular_preco_final(preco, desconto)
+# c - Arredondamento para 2 casas decimais
+preco_final = round(preco_final, 2)
 
-print("Preço final do produto:", valor_final)
+# d - E
